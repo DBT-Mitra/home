@@ -1,0 +1,1961 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DBT Mitra - Digital Benefits Transfer Made Simple</title>
+    <link rel="icon" type="image/png" href="./images/DBTMitra.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="gradient-bg text-white shadow-lg sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-4">
+          <!-- Logo and Title -->
+          <div class="flex items-center space-x-3">
+            <!-- Logo Image -->
+            <img
+              onclick="showSection('home')"
+              style="width: 4.5rem; height: 4.5rem; cursor: pointer"
+              src="./images/DBTMitra.png"
+              alt="DBT Mitra Logo"
+              class="object-contain"
+            />
+
+            <!-- Title -->
+            <div>
+              <h1 class="text-2xl font-bold">DBT Mitra</h1>
+              <p class="text-sm opacity-90">
+                Digital Benefits Transfer Made Simple
+              </p>
+            </div>
+          </div>
+
+          <!-- Desktop Navigation Links -->
+          <div class="hidden md:flex items-center space-x-6">
+            <button
+              onclick="showSection('home')"
+              class="hover:bg-white/20 px-4 py-2 rounded-lg transition-colors"
+            >
+              Home
+            </button>
+            <button
+              onclick="showSection('learn')"
+              class="hover:bg-white/20 px-4 py-2 rounded-lg transition-colors"
+            >
+              Learn
+            </button>
+            <button
+              onclick="showSection('volunteer')"
+              class="hover:bg-white/20 px-4 py-2 rounded-lg transition-colors"
+            >
+              Volunteer
+            </button>
+            <button
+              onclick="showSection('quiz')"
+              class="hover:bg-white/20 px-4 py-2 rounded-lg transition-colors"
+            >
+              Quiz
+            </button>
+            <button
+              onclick="showSection('chat')"
+              class="hover:bg-white/20 px-4 py-2 rounded-lg transition-colors"
+            >
+              AI Support
+            </button>
+            <button
+              onclick="showSection('team')"
+              class="hover:bg-white/20 px-4 py-2 rounded-lg transition-colors"
+            >
+              Our Team
+            </button>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <div class="md:hidden">
+            <button id="menu-btn" class="focus:outline-none">
+              <!-- Hamburger Icon -->
+              <svg
+                class="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Dropdown Menu -->
+      <div id="menu" class="hidden md:hidden px-4 pb-4 space-y-2">
+        <button
+          onclick="showSection('home')"
+          class="block w-full text-left hover:bg-white/20 px-4 py-2 rounded-lg transition-colors"
+        >
+          Home
+        </button>
+        <button
+          onclick="showSection('learn')"
+          class="block w-full text-left hover:bg-white/20 px-4 py-2 rounded-lg transition-colors"
+        >
+          Learn
+        </button>
+        <button
+          onclick="showSection('volunteer')"
+          class="block w-full text-left hover:bg-white/20 px-4 py-2 rounded-lg transition-colors"
+        >
+          Volunteer
+        </button>
+        <button
+          onclick="showSection('quiz')"
+          class="block w-full text-left hover:bg-white/20 px-4 py-2 rounded-lg transition-colors"
+        >
+          Quiz
+        </button>
+        <button
+          onclick="showSection('chat')"
+          class="block w-full text-left hover:bg-white/20 px-4 py-2 rounded-lg transition-colors"
+        >
+          AI Support
+        </button>
+        <button
+          onclick="showSection('team')"
+          class="block w-full text-left hover:bg-white/20 px-4 py-2 rounded-lg transition-colors"
+        >
+          Our Team
+        </button>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <div id="homeSection" class="section">
+      <!-- Hero Section -->
+      <div class="gradient-bg text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 class="text-5xl font-bold mb-6 fade-in">Welcome to DBT Mitra</h2>
+          <p class="text-xl mb-8 opacity-90 max-w-3xl mx-auto fade-in">
+            Your comprehensive platform for understanding and implementing
+            Direct Benefit Transfer (DBT) and Aadhaar linking processes.
+            Empowering students across India with knowledge and support.
+          </p>
+          <div class="flex justify-center space-x-4 fade-in">
+            <button
+              onclick="showSection('tutorial')"
+              class="bg-white text-purple-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+            >
+              Tutorial video
+            </button>
+            <button
+              onclick="showSection('chat')"
+              class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white/10 transition-colors"
+            >
+              Get AI Help
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Key Features -->
+      <div class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h3 class="text-4xl font-bold text-center text-gray-800 mb-16">
+            Platform Features
+          </h3>
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div
+              class="text-center card-hover bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-xl"
+            >
+              <div
+                class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4"
+              >
+                <span class="text-white text-2xl">📚</span>
+              </div>
+              <h4 class="text-xl font-semibold mb-3 text-gray-800">
+                Interactive Learning
+              </h4>
+              <p class="text-gray-600">
+                Step-by-step guides for DBT registration and Aadhaar linking
+                with visual explanations
+              </p>
+            </div>
+
+            <div
+              class="text-center card-hover bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-xl"
+            >
+              <div
+                class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4"
+              >
+                <span class="text-white text-2xl">🤖</span>
+              </div>
+              <h4 class="text-xl font-semibold mb-3 text-gray-800">
+                AI Chatbot Support
+              </h4>
+              <p class="text-gray-600">
+                24/7 intelligent assistance for queries and troubleshooting in
+                multiple languages
+              </p>
+            </div>
+
+            <div
+              class="text-center card-hover bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-xl"
+            >
+              <div
+                class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4"
+              >
+                <span class="text-white text-2xl">🎯</span>
+              </div>
+              <h4 class="text-xl font-semibold mb-3 text-gray-800">
+                Knowledge Quiz
+              </h4>
+              <p class="text-gray-600">
+                Test your understanding with interactive quizzes and compete on
+                the leaderboard
+              </p>
+            </div>
+
+            <div
+              class="text-center card-hover bg-gradient-to-br from-orange-50 to-orange-100 p-8 rounded-xl"
+            >
+              <div
+                class="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4"
+              >
+                <span class="text-white text-2xl">🤝</span>
+              </div>
+              <h4 class="text-xl font-semibold mb-3 text-gray-800">
+                Student Volunteering
+              </h4>
+              <p class="text-gray-600">
+                Track outreach activities and upload awareness session reports
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Key Statistics -->
+      <div class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h3 class="text-3xl font-bold text-center text-gray-800 mb-12">
+            Why DBT Mitra Matters
+          </h3>
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+              <div class="text-3xl font-bold text-red-600 mb-2">30%</div>
+              <div class="text-gray-600 text-sm">Students lack DBT clarity</div>
+              <div class="text-xs text-gray-500 mt-1">(Government Survey)</div>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+              <div class="text-3xl font-bold text-blue-600 mb-2">80%</div>
+              <div class="text-gray-600 text-sm">
+                Mobile penetration among students
+              </div>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+              <div class="text-3xl font-bold text-green-600 mb-2">70%</div>
+              <div class="text-gray-600 text-sm">
+                First-time users need DBT guidance
+              </div>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+              <div class="text-3xl font-bold text-purple-600 mb-2">90%</div>
+              <div class="text-gray-600 text-sm">
+                Faster response with AI chatbots
+              </div>
+            </div>
+          </div>
+
+          <div class="grid md:grid-cols-4 gap-6">
+            <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+              <div class="text-3xl font-bold text-orange-600 mb-2">22+</div>
+              <div class="text-gray-600 text-sm">Official Indian Languages</div>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+              <div class="text-3xl font-bold text-indigo-600 mb-2">25%</div>
+              <div class="text-gray-600 text-sm">Annual DBT growth rate</div>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+              <div class="text-3xl font-bold text-teal-600 mb-2">24/7</div>
+              <div class="text-gray-600 text-sm">AI Support Available</div>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+              <div class="text-3xl font-bold text-pink-600 mb-2">100%</div>
+              <div class="text-gray-600 text-sm">Digital empowerment goal</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Learning Section -->
+    <div id="learnSection" class="section hidden">
+      <div class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">
+            Interactive Learning Modules
+          </h2>
+
+          <!-- DBT vs Aadhaar Comparison -->
+          <div
+            class="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-8 mb-12"
+          >
+            <h3 class="text-2xl font-bold text-center mb-8 text-gray-800">
+              DBT vs Aadhaar Linking: Key Differences
+            </h3>
+            <div class="grid md:grid-cols-2 gap-8">
+              <div class="bg-white rounded-xl p-6 shadow-lg">
+                <div class="flex items-center mb-4">
+                  <div
+                    class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mr-4"
+                  >
+                    <span class="text-white text-xl">💰</span>
+                  </div>
+                  <h4 class="text-xl font-semibold text-gray-800">
+                    Direct Benefit Transfer (DBT)
+                  </h4>
+                </div>
+                <ul class="space-y-3 text-gray-600">
+                  <li class="flex items-start">
+                    <span class="text-green-500 mr-2">✓</span
+                    ><span>Direct money transfer to bank accounts</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-green-500 mr-2">✓</span
+                    ><span>Eliminates middlemen and corruption</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-green-500 mr-2">✓</span
+                    ><span>Faster and transparent process</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-green-500 mr-2">✓</span
+                    ><span>Covers scholarships, subsidies, pensions</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="bg-white rounded-xl p-6 shadow-lg">
+                <div class="flex items-center mb-4">
+                  <div
+                    class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mr-4"
+                  >
+                    <span class="text-white text-xl">🆔</span>
+                  </div>
+                  <h4 class="text-xl font-semibold text-gray-800">
+                    Aadhaar Linking
+                  </h4>
+                </div>
+                <ul class="space-y-3 text-gray-600">
+                  <li class="flex items-start">
+                    <span class="text-green-500 mr-2">✓</span
+                    ><span>Links Aadhaar with bank account</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-green-500 mr-2">✓</span
+                    ><span>Enables DBT functionality</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-green-500 mr-2">✓</span
+                    ><span>One-time setup process</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-green-500 mr-2">✓</span
+                    ><span>Required for government benefits</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step-by-step Guides -->
+          <div class="grid md:grid-cols-2 gap-8 mb-12">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+              <div
+                class="bg-gradient-to-r from-blue-500 to-blue-600 text-white p-6"
+              >
+                <h3 class="text-xl font-bold">DBT Registration Guide</h3>
+                <p class="opacity-90">Complete step-by-step process</p>
+              </div>
+              <div class="p-6">
+                <div class="space-y-4">
+                  <div class="flex items-center p-4 bg-blue-50 rounded-lg">
+                    <div
+                      class="w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center mr-4 text-sm font-bold"
+                    >
+                      1
+                    </div>
+                    <div>
+                      <h4 class="font-semibold">Gather Required Documents</h4>
+                      <p class="text-sm text-gray-600">
+                        Aadhaar card, bank account details, mobile number
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex items-center p-4 bg-blue-50 rounded-lg">
+                    <div
+                      class="w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center mr-4 text-sm font-bold"
+                    >
+                      2
+                    </div>
+                    <div>
+                      <h4 class="font-semibold">Visit DBT Portal</h4>
+                      <p class="text-sm text-gray-600">
+                        Access the official government DBT website
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex items-center p-4 bg-blue-50 rounded-lg">
+                    <div
+                      class="w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center mr-4 text-sm font-bold"
+                    >
+                      3
+                    </div>
+                    <div>
+                      <h4 class="font-semibold">Complete Registration</h4>
+                      <p class="text-sm text-gray-600">
+                        Fill form with accurate information
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex items-center p-4 bg-blue-50 rounded-lg">
+                    <div
+                      class="w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center mr-4 text-sm font-bold"
+                    >
+                      4
+                    </div>
+                    <div>
+                      <h4 class="font-semibold">Verify & Activate</h4>
+                      <p class="text-sm text-gray-600">
+                        Complete OTP verification process
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  onclick="showSection('dbtTutorial')"
+                  class="w-full mt-6 bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition-colors"
+                >
+                  DBT Registration Tutorial Video
+                </button>
+              </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+              <div
+                class="bg-gradient-to-r from-purple-500 to-purple-600 text-white p-6"
+              >
+                <h3 class="text-xl font-bold">Aadhaar Linking Guide</h3>
+                <p class="opacity-90">Link your Aadhaar with bank account</p>
+              </div>
+              <div class="p-6">
+                <div class="space-y-4">
+                  <div class="flex items-center p-4 bg-purple-50 rounded-lg">
+                    <div
+                      class="w-8 h-8 bg-purple-500 text-white rounded-full flex items-center justify-center mr-4 text-sm font-bold"
+                    >
+                      1
+                    </div>
+                    <div>
+                      <h4 class="font-semibold">Visit Your Bank</h4>
+                      <p class="text-sm text-gray-600">
+                        Go to your bank branch with documents
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex items-center p-4 bg-purple-50 rounded-lg">
+                    <div
+                      class="w-8 h-8 bg-purple-500 text-white rounded-full flex items-center justify-center mr-4 text-sm font-bold"
+                    >
+                      2
+                    </div>
+                    <div>
+                      <h4 class="font-semibold">Fill Linking Form</h4>
+                      <p class="text-sm text-gray-600">
+                        Complete Aadhaar-Bank linking application
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex items-center p-4 bg-purple-50 rounded-lg">
+                    <div
+                      class="w-8 h-8 bg-purple-500 text-white rounded-full flex items-center justify-center mr-4 text-sm font-bold"
+                    >
+                      3
+                    </div>
+                    <div>
+                      <h4 class="font-semibold">Biometric Verification</h4>
+                      <p class="text-sm text-gray-600">
+                        Complete fingerprint/iris verification
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex items-center p-4 bg-purple-50 rounded-lg">
+                    <div
+                      class="w-8 h-8 bg-purple-500 text-white rounded-full flex items-center justify-center mr-4 text-sm font-bold"
+                    >
+                      4
+                    </div>
+                    <div>
+                      <h4 class="font-semibold">Receive Confirmation</h4>
+                      <p class="text-sm text-gray-600">
+                        Get SMS confirmation of successful linking
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  onclick="showSection('aadhaarTutorial')"
+                  class="w-full mt-6 bg-purple-500 text-white py-3 rounded-lg hover:bg-purple-600 transition-colors"
+                >
+                  Aadhaar Linking Tutorial Video
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Real-time Status Checker -->
+          <div
+            class="bg-gradient-to-r from-teal-50 to-cyan-50 rounded-2xl p-8 mb-12"
+          >
+            <h3 class="text-2xl font-bold text-center mb-8 text-gray-800">
+              Real-time DBT Status Checker
+            </h3>
+            <div class="max-w-2xl mx-auto">
+              <div class="bg-white rounded-xl p-6 shadow-lg">
+                <form id="statusForm" class="space-y-4">
+                  <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2"
+                      >Enter Your Aadhaar Number</label
+                    >
+                    <input
+                      type="text"
+                      id="aadhaarInput"
+                      placeholder="XXXX-XXXX-XXXX"
+                      maxlength="14"
+                      class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-teal-500 focus:border-transparent"
+                    />
+                  </div>
+                  <button
+                    type="submit"
+                    class="w-full bg-teal-500 text-white py-3 rounded-lg hover:bg-teal-600 transition-colors font-semibold"
+                  >
+                    Check DBT Status
+                  </button>
+                </form>
+
+                <div id="statusResult" class="mt-6 hidden">
+                  <div
+                    class="bg-green-50 border border-green-200 rounded-lg p-4"
+                  >
+                    <div class="flex items-center mb-2">
+                      <span class="text-green-500 text-xl mr-2">✅</span>
+                      <h4 class="font-semibold text-green-800">
+                        DBT Status: Active
+                      </h4>
+                    </div>
+                    <div class="space-y-2 text-sm text-green-700">
+                      <p>• Bank Account: Linked ✓</p>
+                      <p>• Aadhaar Verification: Complete ✓</p>
+                      <p>• Last Payment: ₹2,500 (Scholarship - March 2024)</p>
+                      <p>• Next Expected Payment: April 15, 2024</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Volunteer Section -->
+    <div id="volunteerSection" class="section hidden">
+      <div class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">
+            Student Volunteering Hub
+          </h2>
+
+          <div class="grid lg:grid-cols-2 gap-12">
+            <!-- Activity Tracking -->
+            <div
+              class="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-8"
+            >
+              <h3 class="text-2xl font-bold mb-6 text-gray-800">
+                Track Your Outreach Activities
+              </h3>
+
+              <form id="activityForm" class="space-y-6">
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-2"
+                    >Activity Type</label
+                  >
+                  <select
+                    class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                  >
+                    <option>Awareness Session</option>
+                    <option>Workshop</option>
+                    <option>Help Desk</option>
+                    <option>Community Outreach</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-2"
+                    >Date</label
+                  >
+                  <input
+                    type="date"
+                    class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                  />
+                </div>
+
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-2"
+                    >Location</label
+                  >
+                  <input
+                    type="text"
+                    placeholder="Enter location"
+                    class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                  />
+                </div>
+
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-2"
+                    >Participants Reached</label
+                  >
+                  <input
+                    type="number"
+                    placeholder="Number of people helped"
+                    class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                  />
+                </div>
+
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-2"
+                    >Activity Description</label
+                  >
+                  <textarea
+                    rows="4"
+                    placeholder="Describe your outreach activity..."
+                    class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  class="w-full bg-orange-500 text-white py-3 rounded-lg hover:bg-orange-600 transition-colors font-semibold"
+                >
+                  Log Activity
+                </button>
+              </form>
+            </div>
+
+            <!-- Report Upload -->
+            <div
+              class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8"
+            >
+              <h3 class="text-2xl font-bold mb-6 text-gray-800">
+                Upload Session Reports
+              </h3>
+
+              <form id="reportForm" class="space-y-6">
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-2"
+                    >Report Title</label
+                  >
+                  <input
+                    type="text"
+                    placeholder="Enter report title"
+                    class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  />
+                </div>
+
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-2"
+                    >Session Date</label
+                  >
+                  <input
+                    type="date"
+                    class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  />
+                </div>
+
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-2"
+                    >Upload Photos/Documents</label
+                  >
+                  <div
+                    class="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center hover:border-blue-500 transition-colors cursor-pointer"
+                  >
+                    <div class="text-4xl mb-4">📁</div>
+                    <p class="text-gray-600">
+                      Click to upload files or drag and drop
+                    </p>
+                    <p class="text-sm text-gray-500 mt-2">
+                      Supports: JPG, PNG, PDF (Max 10MB)
+                    </p>
+                  </div>
+                </div>
+
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-2"
+                    >Report Summary</label
+                  >
+                  <textarea
+                    rows="6"
+                    placeholder="Provide a detailed summary of your awareness session, challenges faced, and outcomes achieved..."
+                    class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  class="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition-colors font-semibold"
+                >
+                  Upload Report
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Volunteer Stats -->
+          <div
+            class="mt-12 bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl p-8"
+          >
+            <h3 class="text-2xl font-bold text-center mb-8 text-gray-800">
+              Your Impact Dashboard
+            </h3>
+            <div class="grid md:grid-cols-4 gap-6">
+              <div class="bg-white rounded-xl p-6 text-center shadow-lg">
+                <div class="text-3xl font-bold text-green-600 mb-2">12</div>
+                <div class="text-gray-600">Sessions Conducted</div>
+              </div>
+              <div class="bg-white rounded-xl p-6 text-center shadow-lg">
+                <div class="text-3xl font-bold text-blue-600 mb-2">248</div>
+                <div class="text-gray-600">People Helped</div>
+              </div>
+              <div class="bg-white rounded-xl p-6 text-center shadow-lg">
+                <div class="text-3xl font-bold text-purple-600 mb-2">8</div>
+                <div class="text-gray-600">Reports Submitted</div>
+              </div>
+              <div class="bg-white rounded-xl p-6 text-center shadow-lg">
+                <div class="text-3xl font-bold text-orange-600 mb-2">96%</div>
+                <div class="text-gray-600">Success Rate</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quiz Section -->
+    <div id="quizSection" class="section hidden">
+      <div class="py-12 bg-gray-50 min-h-screen">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- Quiz Header -->
+          <div class="text-center mb-8">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">
+              DBT & Aadhaar Knowledge Quiz
+            </h2>
+            <p class="text-xl text-gray-600">
+              Test your understanding of Direct Benefit Transfer and Aadhaar
+              linking processes
+            </p>
+          </div>
+
+          <!-- Quiz Navigation Tabs -->
+          <div class="bg-white rounded-2xl shadow-xl overflow-hidden mb-8">
+            <div class="flex border-b">
+              <button
+                id="quizTab"
+                onclick="showQuizTab('quiz')"
+                class="flex-1 py-4 px-6 text-center font-semibold bg-indigo-500 text-white"
+              >
+                📝 Take Quiz
+              </button>
+              <button
+                id="leaderboardTab"
+                onclick="showQuizTab('leaderboard')"
+                class="flex-1 py-4 px-6 text-center font-semibold bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors"
+              >
+                🏆 Leaderboard
+              </button>
+            </div>
+
+            <!-- Quiz Content -->
+            <div id="quizContent" class="p-8">
+              <!-- Quiz Start Screen -->
+              <div id="quizStart" class="text-center">
+                <div class="mb-8">
+                  <div
+                    class="w-24 h-24 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-6"
+                  >
+                    <span class="text-4xl">🧠</span>
+                  </div>
+                  <h3 class="text-2xl font-bold text-gray-800 mb-4">
+                    Ready to Test Your Knowledge?
+                  </h3>
+                  <div
+                    class="bg-gray-50 rounded-lg p-6 mb-6 text-left max-w-2xl mx-auto"
+                  >
+                    <h4 class="font-semibold text-gray-800 mb-3">
+                      Quiz Details:
+                    </h4>
+                    <ul class="space-y-2 text-gray-600">
+                      <li class="flex items-center">
+                        <span class="text-green-500 mr-2">✓</span> 20 questions
+                        about DBT and Aadhaar
+                      </li>
+                      <li class="flex items-center">
+                        <span class="text-green-500 mr-2">✓</span> 10 minutes
+                        time limit
+                      </li>
+                      <li class="flex items-center">
+                        <span class="text-green-500 mr-2">✓</span> 5 points per
+                        correct answer
+                      </li>
+                      <li class="flex items-center">
+                        <span class="text-green-500 mr-2">✓</span> Detailed
+                        explanations provided
+                      </li>
+                      <li class="flex items-center">
+                        <span class="text-green-500 mr-2">✓</span> Compete on
+                        the leaderboard
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="max-w-md mx-auto mb-6">
+                  <label class="block text-sm font-medium text-gray-700 mb-2"
+                    >Enter Your Name</label
+                  >
+                  <input
+                    type="text"
+                    id="studentName"
+                    placeholder="Your full name"
+                    class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                  />
+                </div>
+
+                <button
+                  onclick="startQuiz()"
+                  class="bg-indigo-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-indigo-600 transition-colors text-lg"
+                >
+                  Start Quiz 🚀
+                </button>
+              </div>
+
+              <!-- Quiz Questions -->
+              <div id="quizQuestions" class="hidden">
+                <!-- Quiz Header -->
+                <div class="flex justify-between items-center mb-6">
+                  <div class="flex items-center space-x-4">
+                    <div class="bg-indigo-100 px-4 py-2 rounded-lg">
+                      <span class="text-sm font-medium text-indigo-800"
+                        >Question <span id="currentQuestion">1</span> of
+                        20</span
+                      >
+                    </div>
+                    <div class="bg-gray-100 px-4 py-2 rounded-lg">
+                      <span class="text-sm font-medium text-gray-800"
+                        >Score: <span id="currentScore">0</span>/100</span
+                      >
+                    </div>
+                  </div>
+                  <div class="timer bg-red-100 px-4 py-2 rounded-lg">
+                    <span class="text-sm font-medium text-red-800"
+                      >⏰ <span id="timeLeft">10:00</span></span
+                    >
+                  </div>
+                </div>
+
+                <!-- Progress Bar -->
+                <div class="w-full bg-gray-200 rounded-full h-2 mb-8">
+                  <div
+                    id="progressBar"
+                    class="progress-bar bg-indigo-500 h-2 rounded-full"
+                    style="width: 5%"
+                  ></div>
+                </div>
+
+                <!-- Question Content -->
+                <div class="bg-white rounded-xl p-6 shadow-lg mb-6">
+                  <h3
+                    id="questionText"
+                    class="text-xl font-semibold text-gray-800 mb-6"
+                  >
+                    Loading question...
+                  </h3>
+                  <div id="optionsContainer" class="space-y-3">
+                    <!-- Options will be populated by JavaScript -->
+                  </div>
+                </div>
+
+                <!-- Navigation Buttons -->
+                <div class="flex justify-between">
+                  <button
+                    id="prevBtn"
+                    onclick="previousQuestion()"
+                    class="bg-gray-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                    ← Previous
+                  </button>
+                  <button
+                    id="nextBtn"
+                    onclick="nextQuestion()"
+                    class="bg-indigo-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-indigo-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                    Next →
+                  </button>
+                  <button
+                    id="submitBtn"
+                    onclick="submitQuiz()"
+                    class="hidden bg-green-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition-colors"
+                  >
+                    Submit Quiz ✓
+                  </button>
+                </div>
+              </div>
+
+              <!-- Quiz Results -->
+              <div id="quizResults" class="hidden text-center">
+                <div class="mb-8">
+                  <div
+                    id="resultIcon"
+                    class="w-24 h-24 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6"
+                  >
+                    <span class="text-4xl">🏆</span>
+                  </div>
+                  <h3 class="text-3xl font-bold text-gray-800 mb-2">
+                    Quiz Completed!
+                  </h3>
+                  <div
+                    id="finalScore"
+                    class="text-6xl font-bold text-indigo-600 mb-2"
+                  >
+                    85/100
+                  </div>
+                  <div id="scorePercentage" class="text-xl text-gray-600 mb-4">
+                    85% - Great Job!
+                  </div>
+                  <div
+                    id="performanceMessage"
+                    class="text-lg text-gray-700 mb-6"
+                  >
+                    Excellent understanding of DBT and Aadhaar processes!
+                  </div>
+
+                  <div class="grid md:grid-cols-3 gap-4 max-w-2xl mx-auto mb-8">
+                    <div class="bg-green-50 p-4 rounded-lg">
+                      <div
+                        class="text-2xl font-bold text-green-600"
+                        id="correctAnswers"
+                      >
+                        17
+                      </div>
+                      <div class="text-sm text-green-700">Correct</div>
+                    </div>
+                    <div class="bg-red-50 p-4 rounded-lg">
+                      <div
+                        class="text-2xl font-bold text-red-600"
+                        id="incorrectAnswers"
+                      >
+                        3
+                      </div>
+                      <div class="text-sm text-red-700">Incorrect</div>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                      <div
+                        class="text-2xl font-bold text-blue-600"
+                        id="timeTaken"
+                      >
+                        8:45
+                      </div>
+                      <div class="text-sm text-blue-700">Time Taken</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex justify-center space-x-4 mb-8">
+                  <button
+                    onclick="showAnswerReview()"
+                    class="bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 transition-colors"
+                  >
+                    📋 Review Answers
+                  </button>
+                  <button
+                    onclick="restartQuiz()"
+                    class="bg-indigo-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-indigo-600 transition-colors"
+                  >
+                    🔄 Retake Quiz
+                  </button>
+                  <button
+                    onclick="showQuizTab('leaderboard')"
+                    class="bg-yellow-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-yellow-600 transition-colors"
+                  >
+                    🏆 View Leaderboard
+                  </button>
+                </div>
+              </div>
+
+              <!-- Answer Review -->
+              <div id="answerReview" class="hidden">
+                <div class="flex justify-between items-center mb-6">
+                  <h3 class="text-2xl font-bold text-gray-800">
+                    Answer Review
+                  </h3>
+                  <button
+                    onclick="hideAnswerReview()"
+                    class="bg-gray-500 text-white px-4 py-2 rounded-lg hover:bg-gray-600 transition-colors"
+                  >
+                    ← Back to Results
+                  </button>
+                </div>
+                <div id="reviewContent" class="space-y-6">
+                  <!-- Review content will be populated by JavaScript -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Leaderboard Content -->
+            <div id="leaderboardContent" class="p-8 hidden">
+              <div class="text-center mb-8">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">
+                  🏆 Top Performers
+                </h3>
+                <p class="text-gray-600">
+                  See how you rank among other students
+                </p>
+              </div>
+
+              <div
+                class="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-xl p-6 mb-8"
+              >
+                <div class="grid md:grid-cols-3 gap-6">
+                  <div class="text-center">
+                    <div
+                      class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-3"
+                    >
+                      <span class="text-2xl">🥇</span>
+                    </div>
+                    <div class="font-bold text-gray-800" id="firstPlace">
+                      Loading...
+                    </div>
+                    <div class="text-sm text-gray-600" id="firstScore">-</div>
+                  </div>
+                  <div class="text-center">
+                    <div
+                      class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-3"
+                    >
+                      <span class="text-2xl">🥈</span>
+                    </div>
+                    <div class="font-bold text-gray-800" id="secondPlace">
+                      Loading...
+                    </div>
+                    <div class="text-sm text-gray-600" id="secondScore">-</div>
+                  </div>
+                  <div class="text-center">
+                    <div
+                      class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-3"
+                    >
+                      <span class="text-2xl">🥉</span>
+                    </div>
+                    <div class="font-bold text-gray-800" id="thirdPlace">
+                      Loading...
+                    </div>
+                    <div class="text-sm text-gray-600" id="thirdScore">-</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="bg-gray-50 px-6 py-4 border-b">
+                  <h4 class="font-semibold text-gray-800">Complete Rankings</h4>
+                </div>
+                <div id="leaderboardList" class="divide-y divide-gray-200">
+                  <!-- Leaderboard entries will be populated by JavaScript -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chat Section -->
+    <div id="chatSection" class="section hidden">
+      <div class="py-12 bg-gray-50 min-h-screen">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+            <!-- Chat Header -->
+            <div class="gradient-bg text-white p-6">
+              <div class="flex items-center">
+                <div
+                  class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mr-4"
+                >
+                  <span class="text-2xl">🤖</span>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold">DBT Mitra AI Assistant</h3>
+                  <p class="opacity-90">24/7 Support in Multiple Languages</p>
+                </div>
+                <div class="ml-auto">
+                  <span
+                    class="bg-green-500 w-3 h-3 rounded-full inline-block mr-2"
+                  ></span>
+                  <span class="text-sm">Online</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Chat Messages -->
+            <div id="chatMessages" class="h-96 overflow-y-auto p-6 space-y-4">
+              <div class="flex items-start">
+                <div
+                  class="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0"
+                >
+                  <span class="text-white text-sm">🤖</span>
+                </div>
+                <div class="chat-bubble bg-gray-100 rounded-lg p-4">
+                  <p class="text-gray-800">
+                    Hello! I'm your DBT Mitra AI assistant. I can help you with:
+                  </p>
+                  <ul class="mt-2 space-y-1 text-sm text-gray-600">
+                    <li>• DBT registration process</li>
+                    <li>• Aadhaar linking procedures</li>
+                    <li>• Troubleshooting common issues</li>
+                    <li>• Document requirements</li>
+                    <li>• Status checking</li>
+                  </ul>
+                  <p class="mt-2 text-gray-800">How can I assist you today?</p>
+                </div>
+              </div>
+
+              <div class="typing-indicator" id="typingIndicator">
+                <div
+                  class="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0"
+                >
+                  <span class="text-white text-sm">🤖</span>
+                </div>
+                <div class="bg-gray-100 rounded-lg p-4">
+                  <div class="typing-dots">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Chat Input -->
+            <div class="border-t p-6">
+              <div class="flex space-x-4">
+                <input
+                  type="text"
+                  id="chatInput"
+                  placeholder="Type your question here..."
+                  class="flex-1 border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                />
+                <button
+                  onclick="sendMessage()"
+                  class="bg-purple-500 text-white px-6 py-3 rounded-lg hover:bg-purple-600 transition-colors font-semibold"
+                >
+                  Send
+                </button>
+              </div>
+
+              <!-- Quick Questions -->
+              <div class="mt-4">
+                <p class="text-sm text-gray-600 mb-2">Quick questions:</p>
+                <div class="flex flex-wrap gap-2">
+                  <button
+                    onclick="askQuickQuestion('How do I register for DBT?')"
+                    class="bg-gray-100 text-gray-700 px-3 py-2 rounded-lg text-sm hover:bg-gray-200 transition-colors"
+                  >
+                    How do I register for DBT?
+                  </button>
+                  <button
+                    onclick="askQuickQuestion('What documents do I need?')"
+                    class="bg-gray-100 text-gray-700 px-3 py-2 rounded-lg text-sm hover:bg-gray-200 transition-colors"
+                  >
+                    What documents do I need?
+                  </button>
+                  <button
+                    onclick="askQuickQuestion('How to link Aadhaar with bank?')"
+                    class="bg-gray-100 text-gray-700 px-3 py-2 rounded-lg text-sm hover:bg-gray-200 transition-colors"
+                  >
+                    How to link Aadhaar with bank?
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tutorial Section -->
+    <div id="tutorialSection" class="section hidden">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-bold text-black mb-4">🎥 Tutorial Video</h2>
+          <p class="text-xl text-black/80">
+            Learn how to use DBT Mitra with our comprehensive video guide
+          </p>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg p-8">
+          <div class="aspect-video bg-gray-900 rounded-lg mb-6 overflow-hidden">
+            <video
+              class="w-full h-full object-cover"
+              controls
+              poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%23f3f4f6'/%3E%3Cg transform='translate(400,225)'%3E%3Ccircle r='50' fill='%236366f1' opacity='0.8'/%3E%3Cpolygon points='-15,-20 -15,20 25,0' fill='white'/%3E%3C/g%3E%3Ctext x='400' y='300' text-anchor='middle' fill='%236b7280' font-family='Arial' font-size='24'%3EDBT Mitra Tutorial%3C/text%3E%3C/svg%3E"
+            >
+              <source
+                src="./videos/DBT_Mitra_Introduction.mp4"
+                type="video/mp4"
+              />
+              <p class="text-center text-gray-500 p-8">
+                Your browser doesn't support video playback. Please use a modern
+                browser to view the tutorial.
+              </p>
+            </video>
+          </div>
+
+          <div class="text-center mb-6">
+            <h3 class="text-2xl font-bold text-gray-800 mb-2">
+              Complete DBT Mitra Walkthrough
+            </h3>
+            <p class="text-gray-600">
+              Learn all features and how to navigate the platform effectively
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-gray-50 rounded-lg p-4">
+              <h4 class="font-semibold text-gray-800 mb-2">
+                📚 What you'll learn:
+              </h4>
+              <ul class="text-sm text-gray-600 space-y-1">
+                <li>• How to navigate the platform</li>
+                <li>• Taking the interactive quiz</li>
+                <li>• Using the AI chat assistant</li>
+                <li>• Checking DBT status</li>
+                <li>• Tracking your progress</li>
+              </ul>
+            </div>
+            <div class="bg-gray-50 rounded-lg p-4">
+              <h4 class="font-semibold text-gray-800 mb-2">
+                🎯 Tutorial covers:
+              </h4>
+              <ul class="text-sm text-gray-600 space-y-1">
+                <li>• DBT registration process</li>
+                <li>• Aadhaar linking procedures</li>
+                <li>• Common troubleshooting tips</li>
+                <li>• Best practices for success</li>
+                <li>• Real-world examples</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DBT Registration Tutorial Section -->
+    <div id="dbtTutorialSection" class="section hidden">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-bold text-black mb-4">
+            🎥 DBT Registration Tutorial
+          </h2>
+          <p class="text-xl text-black/80">
+            Step-by-step guide to complete your DBT registration process
+          </p>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg p-8">
+          <div class="aspect-video bg-gray-900 rounded-lg mb-6 overflow-hidden">
+            <video
+              class="w-full h-full object-cover"
+              controls
+              poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%23f3f4f6'/%3E%3Cg transform='translate(400,225)'%3E%3Ccircle r='50' fill='%236366f1' opacity='0.8'/%3E%3Cpolygon points='-15,-20 -15,20 25,0' fill='white'/%3E%3C/g%3E%3Ctext x='400' y='300' text-anchor='middle' fill='%236b7280' font-family='Arial' font-size='24'%3EDBT Registration Guide%3C/text%3E%3C/svg%3E"
+            >
+              <source src="./videos/DBT_Awareness.mp4" type="video/mp4" />
+              <p class="text-center text-gray-500 p-8">
+                Your browser doesn't support video playback. Please use a modern
+                browser to view the tutorial.
+              </p>
+            </video>
+          </div>
+
+          <div class="text-center mb-6">
+            <h3 class="text-2xl font-bold text-gray-800 mb-2">
+              Complete DBT Registration Process
+            </h3>
+            <p class="text-gray-600">
+              Learn how to register for Direct Benefit Transfer step by step
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-gray-50 rounded-lg p-4">
+              <h4 class="font-semibold text-gray-800 mb-2">
+                📋 Registration Steps:
+              </h4>
+              <ul class="text-sm text-gray-600 space-y-1">
+                <li>• Document preparation</li>
+                <li>• Portal navigation</li>
+                <li>• Form filling process</li>
+                <li>• OTP verification</li>
+                <li>• Status confirmation</li>
+              </ul>
+            </div>
+            <div class="bg-gray-50 rounded-lg p-4">
+              <h4 class="font-semibold text-gray-800 mb-2">
+                📄 Required Documents:
+              </h4>
+              <ul class="text-sm text-gray-600 space-y-1">
+                <li>• Aadhaar card</li>
+                <li>• Bank account details</li>
+                <li>• Mobile number</li>
+                <li>• Address proof</li>
+                <li>• Identity verification</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Aadhaar Linking Tutorial Section -->
+    <div id="aadhaarTutorialSection" class="section hidden">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-bold text-black mb-4">
+            🎥 Aadhaar Linking Tutorial
+          </h2>
+          <p class="text-xl text-black/80">
+            Complete guide to link your Aadhaar with bank account and services
+          </p>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg p-8">
+          <div class="aspect-video bg-gray-900 rounded-lg mb-6 overflow-hidden">
+            <video
+              class="w-full h-full object-cover"
+              controls
+              poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%23f3f4f6'/%3E%3Cg transform='translate(400,225)'%3E%3Ccircle r='50' fill='%236366f1' opacity='0.8'/%3E%3Cpolygon points='-15,-20 -15,20 25,0' fill='white'/%3E%3C/g%3E%3Ctext x='400' y='300' text-anchor='middle' fill='%236b7280' font-family='Arial' font-size='24'%3EAadhaar Linking Guide%3C/text%3E%3C/svg%3E"
+            >
+              <source
+                src="./videos/Aadhar_Seeding_Awareness.mp4"
+                type="video/mp4"
+              />
+              <p class="text-center text-gray-500 p-8">
+                Your browser doesn't support video playback. Please use a modern
+                browser to view the tutorial.
+              </p>
+            </video>
+          </div>
+
+          <div class="text-center mb-6">
+            <h3 class="text-2xl font-bold text-gray-800 mb-2">
+              Complete Aadhaar Linking Process
+            </h3>
+            <p class="text-gray-600">
+              Learn how to link your Aadhaar with bank accounts and government
+              services
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-gray-50 rounded-lg p-4">
+              <h4 class="font-semibold text-gray-800 mb-2">
+                🔗 Linking Steps:
+              </h4>
+              <ul class="text-sm text-gray-600 space-y-1">
+                <li>• Bank visit preparation</li>
+                <li>• Form submission process</li>
+                <li>• Biometric verification</li>
+                <li>• Online linking methods</li>
+                <li>• Status verification</li>
+              </ul>
+            </div>
+            <div class="bg-gray-50 rounded-lg p-4">
+              <h4 class="font-semibold text-gray-800 mb-2">
+                📋 Required Items:
+              </h4>
+              <ul class="text-sm text-gray-600 space-y-1">
+                <li>• Original Aadhaar card</li>
+                <li>• Bank passbook</li>
+                <li>• Account details</li>
+                <li>• Mobile number</li>
+                <li>• Identity verification</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team Section -->
+    <div id="teamSection" class="section hidden">
+      <div class="py-12 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">Meet Our Team</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+              Passionate developers and innovators working together to make DBT
+              accessible for everyone across India
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Team Member 1 - Adnan Khan -->
+            <div
+              class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover"
+            >
+              <div
+                class="bg-gradient-to-br from-blue-500 to-purple-600 h-32"
+              ></div>
+              <div class="relative px-6 pb-6">
+                <div
+                  class="absolute -top-16 left-1/2 transform -translate-x-1/2"
+                >
+                  <div
+                    class="w-24 h-24 rounded-full border-4 border-white overflow-hidden bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center"
+                  >
+                    <img
+                      src="./images/adnan_img.png"
+                      alt="Profile"
+                      class="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+
+                <div class="pt-12 text-center">
+                  <h3 class="text-xl font-bold text-gray-800 mb-2">
+                    Adnan Khan
+                  </h3>
+                  <p class="text-indigo-600 font-semibold mb-3">
+                    Frontend Developer
+                  </p>
+                  <p class="text-gray-600 text-sm mb-4">
+                    Specializes in creating intuitive user interfaces and
+                    responsive web applications. Passionate about accessibility
+                    and user experience design.
+                  </p>
+                  <div class="flex justify-center space-x-3">
+                    <div
+                      class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center"
+                    >
+                      <span class="text-blue-600 text-sm">💻</span>
+                    </div>
+                    <div
+                      class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center"
+                    >
+                      <span class="text-green-600 text-sm">🎨</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Team Member 2 - Saransh Bhargav -->
+            <div
+              class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover"
+            >
+              <div
+                class="bg-gradient-to-br from-green-500 to-teal-600 h-32"
+              ></div>
+              <div class="relative px-6 pb-6">
+                <div
+                  class="absolute -top-16 left-1/2 transform -translate-x-1/2"
+                >
+                  <div
+                    class="w-24 h-24 rounded-full border-4 border-white overflow-hidden bg-gradient-to-br from-green-400 to-teal-500 flex items-center justify-center"
+                  >
+                    <svg viewBox="0 0 100 100" class="w-20 h-20">
+                      <circle cx="50" cy="35" r="12" fill="#fff" />
+                      <path
+                        d="M25 75 Q25 60 50 60 Q75 60 75 75 L75 85 L25 85 Z"
+                        fill="#fff"
+                      />
+                      <rect
+                        x="45"
+                        y="25"
+                        width="10"
+                        height="8"
+                        rx="2"
+                        fill="#22c55e"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="pt-12 text-center">
+                  <h3 class="text-xl font-bold text-gray-800 mb-2">
+                    Saransh Bhargav
+                  </h3>
+                  <p class="text-green-600 font-semibold mb-3">
+                    No position yet
+                  </p>
+                  <p class="text-gray-600 text-sm mb-4">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Incidunt, cupiditate accusantium nesciunt voluptate dolore
+                    veniam accusamus doloremque adipisci omnis a neque
+                    temporibus culpa pariatur, nostrum modi sapiente et tempore
+                    assumenda!
+                  </p>
+                  <div class="flex justify-center space-x-3">
+                    <div
+                      class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center"
+                    >
+                      <span class="text-green-600 text-sm">⚙️</span>
+                    </div>
+                    <div
+                      class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center"
+                    >
+                      <span class="text-blue-600 text-sm">🗄️</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Team Member 3 - Abhishek Mehra -->
+            <div
+              class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover"
+            >
+              <div
+                class="bg-gradient-to-br from-orange-500 to-red-600 h-32"
+              ></div>
+              <div class="relative px-6 pb-6">
+                <div
+                  class="absolute -top-16 left-1/2 transform -translate-x-1/2"
+                >
+                  <div
+                    class="w-24 h-24 rounded-full border-4 border-white overflow-hidden bg-gradient-to-br from-orange-400 to-red-500 flex items-center justify-center"
+                  >
+                    <svg viewBox="0 0 100 100" class="w-20 h-20">
+                      <circle cx="50" cy="35" r="12" fill="#fff" />
+                      <path
+                        d="M25 75 Q25 60 50 60 Q75 60 75 75 L75 85 L25 85 Z"
+                        fill="#fff"
+                      />
+                      <circle cx="45" cy="30" r="2" fill="#f97316" />
+                      <circle cx="55" cy="30" r="2" fill="#f97316" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="pt-12 text-center">
+                  <h3 class="text-xl font-bold text-gray-800 mb-2">
+                    Abhishek Mehra
+                  </h3>
+                  <p class="text-orange-600 font-semibold mb-3">
+                    No position yet
+                  </p>
+                  <p class="text-gray-600 text-sm mb-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+                    numquam, dolores recusandae totam quam est. Accusantium
+                    consectetur hic voluptas libero pariatur! Possimus dolorem
+                    laboriosam voluptatum, iure nam reprehenderit voluptas
+                    harum!
+                  </p>
+                  <div class="flex justify-center space-x-3">
+                    <div
+                      class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center"
+                    >
+                      <span class="text-orange-600 text-sm">🔧</span>
+                    </div>
+                    <div
+                      class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center"
+                    >
+                      <span class="text-purple-600 text-sm">🚀</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Team Member 4 - Tapan Patidar -->
+            <div
+              class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover"
+            >
+              <div
+                class="bg-gradient-to-br from-purple-500 to-pink-600 h-32"
+              ></div>
+              <div class="relative px-6 pb-6">
+                <div
+                  class="absolute -top-16 left-1/2 transform -translate-x-1/2"
+                >
+                  <div
+                    class="w-24 h-24 rounded-full border-4 border-white overflow-hidden bg-gradient-to-br from-purple-400 to-pink-500 flex items-center justify-center"
+                  >
+                    <svg viewBox="0 0 100 100" class="w-20 h-20">
+                      <circle cx="50" cy="35" r="12" fill="#fff" />
+                      <path
+                        d="M25 75 Q25 60 50 60 Q75 60 75 75 L75 85 L25 85 Z"
+                        fill="#fff"
+                      />
+                      <path
+                        d="M42 28 Q50 25 58 28"
+                        stroke="#a855f7"
+                        stroke-width="2"
+                        fill="none"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="pt-12 text-center">
+                  <h3 class="text-xl font-bold text-gray-800 mb-2">
+                    Tapan Patidar
+                  </h3>
+                  <p class="text-purple-600 font-semibold mb-3">
+                    No position yet
+                  </p>
+                  <p class="text-gray-600 text-sm mb-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Enim eveniet quod, architecto ullam nisi, maiores rem
+                    dignissimos doloremque deleniti odio optio numquam commodi
+                    ducimus. Deleniti non ipsam repudiandae exercitationem
+                    veritatis?
+                  </p>
+                  <div class="flex justify-center space-x-3">
+                    <div
+                      class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center"
+                    >
+                      <span class="text-purple-600 text-sm">🤖</span>
+                    </div>
+                    <div
+                      class="w-8 h-8 bg-pink-100 rounded-full flex items-center justify-center"
+                    >
+                      <span class="text-pink-600 text-sm">🧠</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Team Member 5 - Krish Verma -->
+            <div
+              class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover"
+            >
+              <div
+                class="bg-gradient-to-br from-teal-500 to-cyan-600 h-32"
+              ></div>
+              <div class="relative px-6 pb-6">
+                <div
+                  class="absolute -top-16 left-1/2 transform -translate-x-1/2"
+                >
+                  <div
+                    class="w-24 h-24 rounded-full border-4 border-white overflow-hidden bg-gradient-to-br from-teal-400 to-cyan-500 flex items-center justify-center"
+                  >
+                    <svg viewBox="0 0 100 100" class="w-20 h-20">
+                      <circle cx="50" cy="35" r="12" fill="#fff" />
+                      <path
+                        d="M25 75 Q25 60 50 60 Q75 60 75 75 L75 85 L25 85 Z"
+                        fill="#fff"
+                      />
+                      <rect
+                        x="46"
+                        y="28"
+                        width="8"
+                        height="4"
+                        rx="1"
+                        fill="#14b8a6"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="pt-12 text-center">
+                  <h3 class="text-xl font-bold text-gray-800 mb-2">
+                    Krish Verma
+                  </h3>
+                  <p class="text-teal-600 font-semibold mb-3">
+                    No position yet
+                  </p>
+                  <p class="text-gray-600 text-sm mb-4">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Nam ipsam adipisci reiciendis suscipit praesentium earum.
+                    Quod ratione autem sequi aut! Velit ab natus vero pariatur
+                    similique fuga sequi magni illum.
+                  </p>
+                  <div class="flex justify-center space-x-3">
+                    <div
+                      class="w-8 h-8 bg-teal-100 rounded-full flex items-center justify-center"
+                    >
+                      <span class="text-teal-600 text-sm">🎨</span>
+                    </div>
+                    <div
+                      class="w-8 h-8 bg-cyan-100 rounded-full flex items-center justify-center"
+                    >
+                      <span class="text-cyan-600 text-sm">✨</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Team Member 6 - Isha Marskole -->
+            <div
+              class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover"
+            >
+              <div
+                class="bg-gradient-to-br from-rose-500 to-pink-600 h-32"
+              ></div>
+              <div class="relative px-6 pb-6">
+                <div
+                  class="absolute -top-16 left-1/2 transform -translate-x-1/2"
+                >
+                  <div
+                    class="w-24 h-24 rounded-full border-4 border-white overflow-hidden bg-gradient-to-br from-rose-400 to-pink-500 flex items-center justify-center"
+                  >
+                    <svg viewBox="0 0 100 100" class="w-20 h-20">
+                      <circle cx="50" cy="35" r="12" fill="#fff" />
+                      <path
+                        d="M25 75 Q25 60 50 60 Q75 60 75 75 L75 85 L25 85 Z"
+                        fill="#fff"
+                      />
+                      <circle cx="46" cy="32" r="1.5" fill="#f43f5e" />
+                      <circle cx="54" cy="32" r="1.5" fill="#f43f5e" />
+                      <path
+                        d="M46 38 Q50 42 54 38"
+                        stroke="#f43f5e"
+                        stroke-width="1.5"
+                        fill="none"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="pt-12 text-center">
+                  <h3 class="text-xl font-bold text-gray-800 mb-2">
+                    Isha Marskole
+                  </h3>
+                  <p class="text-rose-600 font-semibold mb-3">
+                    No position yet
+                  </p>
+                  <p class="text-gray-600 text-sm mb-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Officiis quidem commodi enim odit, inventore voluptates
+                    harum at ex impedit, quasi laboriosam architecto itaque
+                    cumque, perferendis vel eligendi sed minus qui?
+                  </p>
+                  <div class="flex justify-center space-x-3">
+                    <div
+                      class="w-8 h-8 bg-rose-100 rounded-full flex items-center justify-center"
+                    >
+                      <span class="text-rose-600 text-sm">📋</span>
+                    </div>
+                    <div
+                      class="w-8 h-8 bg-pink-100 rounded-full flex items-center justify-center"
+                    >
+                      <span class="text-pink-600 text-sm">👥</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team Stats -->
+          <div
+            class="mt-16 bg-gradient-to-r from-indigo-50 to-purple-50 rounded-2xl p-8"
+          >
+            <h3 class="text-2xl font-bold text-center text-gray-800 mb-8">
+              Our Team Achievements
+            </h3>
+            <div class="grid md:grid-cols-4 gap-6">
+              <div class="text-center">
+                <div class="text-3xl font-bold text-indigo-600 mb-2">6</div>
+                <div class="text-gray-600">Team Members</div>
+              </div>
+              <div class="text-center">
+                <div class="text-3xl font-bold text-purple-600 mb-2">500+</div>
+                <div class="text-gray-600">Hours Invested</div>
+              </div>
+              <div class="text-center">
+                <div class="text-3xl font-bold text-green-600 mb-2">15+</div>
+                <div class="text-gray-600">Features Developed</div>
+              </div>
+              <div class="text-center">
+                <div class="text-3xl font-bold text-orange-600 mb-2">100%</div>
+                <div class="text-gray-600">Dedication</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-4 gap-8 mb-8">
+          <!-- Quick Links -->
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+            <ul class="space-y-2">
+              <li>
+                <button
+                  onclick="showSection('home')"
+                  class="text-gray-300 hover:text-white transition-colors"
+                >
+                  Home
+                </button>
+              </li>
+              <li>
+                <button
+                  onclick="showSection('learn')"
+                  class="text-gray-300 hover:text-white transition-colors"
+                >
+                  Learn DBT
+                </button>
+              </li>
+              <li>
+                <button
+                  onclick="showSection('quiz')"
+                  class="text-gray-300 hover:text-white transition-colors"
+                >
+                  Take Quiz
+                </button>
+              </li>
+              <li>
+                <button
+                  onclick="showSection('volunteer')"
+                  class="text-gray-300 hover:text-white transition-colors"
+                >
+                  Volunteer Hub
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Resources -->
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Resources</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-white transition-colors"
+                  >DBT Portal</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-white transition-colors"
+                  >Aadhaar Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-white transition-colors"
+                  >Help & Support</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-white transition-colors"
+                  >Documentation</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Support -->
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Support</h4>
+            <ul class="space-y-2">
+              <li>
+                <button
+                  onclick="showSection('chat')"
+                  class="text-gray-300 hover:text-white transition-colors"
+                >
+                  AI Assistant
+                </button>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-white transition-colors"
+                  >FAQ</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-white transition-colors"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-white transition-colors"
+                  >Feedback</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- About -->
+          <div>
+            <h4 class="text-lg font-semibold mb-4">About</h4>
+            <ul class="space-y-2">
+              <li>
+                <button
+                  onclick="showSection('team')"
+                  class="text-gray-300 hover:text-white transition-colors"
+                >
+                  Our Team
+                </button>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-white transition-colors"
+                  >Mission</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-white transition-colors"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-white transition-colors"
+                  >Terms of Service</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="border-t border-gray-700 pt-8 text-center">
+          <p class="text-gray-300">
+            © 2025 DBT Mitra | All Rights Reserved | Designed for Smart India
+            Hackathon
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

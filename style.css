@@ -1,0 +1,146 @@
+body {
+  box-sizing: border-box;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.pulse-animation {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.slide-in {
+  animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.chat-bubble {
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.typing-indicator {
+  display: none;
+}
+
+.typing-indicator.show {
+  display: flex;
+  align-items: center;
+}
+
+.typing-dots {
+  display: flex;
+  gap: 4px;
+}
+
+.typing-dots div {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #9ca3af;
+  animation: typing 1.4s infinite ease-in-out;
+}
+
+.typing-dots div:nth-child(1) {
+  animation-delay: -0.32s;
+}
+.typing-dots div:nth-child(2) {
+  animation-delay: -0.16s;
+}
+
+@keyframes typing {
+  0%,
+  80%,
+  100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
+
+.quiz-option {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.quiz-option:hover {
+  background-color: #f3f4f6;
+  border-color: #6366f1;
+}
+
+.quiz-option.selected {
+  background-color: #eef2ff;
+  border-color: #6366f1;
+  border-width: 2px;
+}
+
+.quiz-option.correct {
+  background-color: #dcfce7;
+  border-color: #16a34a;
+  border-width: 2px;
+}
+
+.quiz-option.incorrect {
+  background-color: #fef2f2;
+  border-color: #dc2626;
+  border-width: 2px;
+}
+
+.progress-bar {
+  transition: width 0.3s ease;
+}
+
+.timer {
+  animation: pulse 1s infinite;
+}
+
+.timer.warning {
+  animation: pulse 0.5s infinite;
+  color: #dc2626;
+}
